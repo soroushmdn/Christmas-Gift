@@ -15,3 +15,16 @@ navLinks.forEach((n) => {
     navMenu.classList.remove('show-menu');
   });
 });
+
+/*@@@@@@@@@@@@@@@@@ change header background  @@@@@@@@@@@@@@@@@*/
+
+const header = document.getElementById('header');
+window.addEventListener('scroll', scrollHeader);
+
+function scrollHeader() {
+  if (this.scrollY >= 50) {
+    header.classList.add('scroll-header');
+  } else {
+    header.classList.remove('scroll-header');
+  }
+}
